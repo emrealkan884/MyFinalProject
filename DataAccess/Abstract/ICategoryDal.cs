@@ -11,5 +11,6 @@ namespace DataAccess.Abstract
         void Add(Category category);
         void Delete(Category category);
         void Update(Category category);
+        List<Category> GetAllByCategories(int categoryId);
     }
 }

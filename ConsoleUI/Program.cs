@@ -13,7 +13,12 @@ namespace ConsoleUI
             {
                 Console.WriteLine(item.ProductName+" "+item.UnitsPrice);
             }
-            
+
+            CategoryManager categoryManager = new CategoryManager(new InMemoryCategoryDal());
+            foreach (var item in categoryManager.GetAll())
+            {
+                Console.WriteLine(item.CategoryName);
+            }
         }
     }
 }

@@ -18,7 +18,7 @@ namespace Core.Utilities.Results
         {
 
         }
-        public ErrorDataResult() : base(default, true)
+        public ErrorDataResult() : base(default, false)
         {
 
         }
